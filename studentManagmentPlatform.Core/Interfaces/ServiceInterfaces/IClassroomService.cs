@@ -4,12 +4,12 @@ namespace studentManagmentPlatform.Core.Interfaces.ServiceInterfaces;
 
 public interface IClassroomService
 {
-    Task<Classroom> GetByIdAsync(int id);
-    Task<IEnumerable<Classroom>> GetAllAsync();
-    Task<Classroom> CreateClassroomAsync(Classroom classroom);
-    Task UpdateClassroomAsync(Classroom classroom);
-    Task DeleteClassroomAsync(int id);
+    Task<Classroom> GetById(int id);
+    Task<IEnumerable<Classroom>> GetAll();
+    Task<Classroom> CreateClassroom(Classroom classroom);
+    Task UpdateClassroom(Classroom classroom);
+    Task DeleteClassroom(int id);
 
-    Task<IEnumerable<Student>> GetStudentsAsync(int classroomId);
-    Task<IEnumerable<Teacher>> GetTeachersAsync(int classroomId);
+    Task<IEnumerable<Student>> GetStudents(int classroomId);
+    Task<IEnumerable<Teacher>> GetTeachers(int classroomId);
 }

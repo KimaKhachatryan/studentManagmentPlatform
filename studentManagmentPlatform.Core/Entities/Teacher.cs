@@ -23,7 +23,6 @@ public class Teacher
     [Required]
     public SubjectEnum Subject { get; set; } 
 
-    // Навигация
-    public ICollection<Student> Students { get; set; } = new List<Student>();
-    public ICollection<Classroom> Classrooms { get; set; } = new List<Classroom>();
+    public ICollection<Student> Students { get; set; } 
+    public ICollection<Classroom> Classrooms { get; set; } 
 }

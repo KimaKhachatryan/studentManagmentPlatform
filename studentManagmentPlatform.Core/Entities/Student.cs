@@ -18,7 +18,9 @@ public class Student
 
     [DataType(DataType.Date)]
     public DateTime? DateOfBirth { get; set; }
+    
+    public int ClassroomId { get; set; }
+    public virtual Classroom Classroom { get; set; }
 
-    public ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
-    public ICollection<Classroom> Classrooms { get; set; } = new List<Classroom>();
+    public ICollection<Teacher> Teachers { get; set; } 
 }

@@ -4,6 +4,6 @@ namespace studentManagmentPlatform.Core.Interfaces.RepositoryInterfaces;
 
 public interface ITeacherRepository : IRepository<Teacher>
 {
-    Task<Teacher?> GetByEmailAsync(string email);
-    Task<IEnumerable<Teacher>> GetBySubjectAsync(SubjectEnum subject);
+    Task<Teacher?> GetByEmail(string email);
+    Task<IEnumerable<Teacher>> GetBySubject(SubjectEnum subject);
 }
