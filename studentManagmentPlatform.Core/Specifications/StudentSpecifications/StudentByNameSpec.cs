@@ -9,7 +9,7 @@ public class StudentByNameSpec : Specification<Student>
 
     public StudentByNameSpec(string name)
     {
-        _name = name.ToUpper();
+        _name = name.ToLower();
     }
 
     public override Expression<Func<Student, bool>> ToExpression()
