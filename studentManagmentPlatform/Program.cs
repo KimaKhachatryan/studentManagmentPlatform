@@ -1,3 +1,6 @@
+using studentManagmentPlatform.Core.Interfaces.ServiceInterfaces;
+using studentManagmentPlatform.Service;
+
 namespace studentManagmentPlatform
 {
     public class Program
@@ -7,6 +10,11 @@ namespace studentManagmentPlatform
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
+            builder.Services.AddControllers();
+
+            builder.Services.AddScoped<ITeacherService, TeacherService>();
+
+            app.MapControllers();
             app.Run();
         }
     }

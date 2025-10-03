@@ -24,11 +24,11 @@ public class ExceptionMiddleware
         catch (Exception ex)
         {
             _logger.LogError(ex, ex.Message);
-            await HandleExceptionAsync(context, ex);
+            await HandleException(context, ex);
         }
     }
 
-    private static Task HandleExceptionAsync(HttpContext context, Exception exception)
+    private static Task HandleException(HttpContext context, Exception exception)
     {
         context.Response.ContentType = "application/json";
 

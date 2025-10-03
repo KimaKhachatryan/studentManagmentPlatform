@@ -4,11 +4,11 @@ namespace studentManagmentPlatform.Core.Interfaces.ServiceInterfaces;
 
 public interface ITeacherService
 {
-    Task<Teacher> GetByIdAsync(int id);
-    Task<IEnumerable<Teacher>> GetAllAsync();
-    Task<Teacher> RegisterTeacherAsync(Teacher teacher);
-    Task UpdateTeacherAsync(Teacher teacher);
-    Task DeleteTeacherAsync(int id);
+    Task<Teacher> GetById(int id);
+    Task<IEnumerable<Teacher>> GetAll();
+    Task<Teacher> RegisterTeacher(Teacher teacher);
+    Task UpdateTeacher(Teacher teacher);
+    Task DeleteTeacher(int id);
 
-    Task<IEnumerable<Teacher>> GetBySubjectAsync(SubjectEnum subject);
+    Task<IEnumerable<Teacher>> GetBySubject(SubjectEnum subject);
 }

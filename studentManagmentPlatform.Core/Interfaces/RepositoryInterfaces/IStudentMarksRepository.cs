@@ -4,6 +4,6 @@ namespace studentManagmentPlatform.Core.Interfaces.RepositoryInterfaces;
 
 public interface IStudentMarksRepository : IRepository<StudentMarksDetails>
 {
-    Task<IEnumerable<StudentMarksDetails>> GetMarksByStudentAsync(int studentId);
-    Task<double> GetAverageBySubjectAsync(int studentId, SubjectEnum subject);
+    Task<IEnumerable<StudentMarksDetails>> GetMarksByStudent(int studentId);
+    Task<double> GetAverageBySubject(int studentId, SubjectEnum subject);
 }

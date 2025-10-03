@@ -21,5 +21,5 @@ public class StudentMarksDetails
 
     public int MarksSum { get; set; }
 
-    public Student Student { get; set; }
+    public virtual Student Student { get; set; }
 }
