@@ -5,11 +5,11 @@ namespace studentManagmentPlatform.Core.Specifications.StudentSpecifications;
 
 public class StudentByNameSpec : Specification<Student>
 {
-    private readonly string _name;
+    private readonly string? _name;
 
-    public StudentByNameSpec(string name)
+    public StudentByNameSpec(string? name)
     {
-        _name = name.ToLower();
+        _name = name?.ToLower();
     }
 
     public override Expression<Func<Student, bool>> ToExpression()
