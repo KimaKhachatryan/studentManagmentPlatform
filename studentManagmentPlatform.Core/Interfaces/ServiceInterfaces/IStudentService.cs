@@ -5,7 +5,6 @@ namespace studentManagmentPlatform.Core.Interfaces.ServiceInterfaces;
 public interface IStudentService
 {
     Task<Student> GetById(int id);
-    Task<IEnumerable<Student>> GetAll();
     Task<Student> RegisterStudent(Student student);
     Task UpdateStudent(Student student);
     Task DeleteStudent(int id);
